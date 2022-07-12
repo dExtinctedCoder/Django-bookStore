@@ -6,8 +6,8 @@ from django.db import models
 class BookStoreApp(models.Model):
   tittle = models.CharField(max_length=255);
   author_name = models.CharField(max_length=100);
-  description = models.BigAutoField(max_length=255);
+  description = models.TextField();
   category = models.CharField(max_length=100);
   pub_date = models.DateField(auto_now_add=True)
-  book_content = models.BigAutoField();
+  book_content = models.TextField()
 
